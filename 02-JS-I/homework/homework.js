@@ -126,14 +126,14 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-return math.pow (num * 2) ;
+return math.pow (num , 2) ;
 
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return math.pow (num * 3) ;
+  return math.pow (num * num * num ) ;
 }
 
 function elevar(num, exponent) {
@@ -166,9 +166,12 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-if (num > 0)
+if (num === 0) {
+  return false ; 
+}
+else  if (num > 0)
 return "Es positivo"
-else if (num > 0)
+else if (num < 0)
 return "Es negativo"
 else return false ;
 
@@ -178,7 +181,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
- return str + " ! " ;
+ return str +" ! " ;
 
 
 
